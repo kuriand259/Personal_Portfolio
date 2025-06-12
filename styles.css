@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    /* height: 100%;  */
+    /* height: 100vh;  */
     /* Ensure html and body take full viewport height */
     /* overflow: hidden;  */
     /* Prevent body scrollbar if rectangle content overflows slightly */
@@ -62,7 +62,7 @@ body {
 
     padding-top: 1vw;
     padding-left: 1vw;
-    background-color: #553b06;
+    /* background-color: #553b06; */
     /* margin: 10px; */
 }
 
@@ -93,7 +93,7 @@ body {
     align-items: center; /* Center children horizontally */
     box-sizing: border-box;
     /* margin-top: 10vw; */
-    background-color: azure;
+    /* background-color: azure; */
     padding: 1.5vw;
 }
 
@@ -126,20 +126,24 @@ body {
 
 .content-container {
     width: 90%; /* Full width of the body */
-    height: 50%; /* Full height of the body */
+    /* height: 50%;  */
+    /* Full height of the body */
     display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: row; /* Stack children vertically */
     justify-content: flex-start; 
     /* Center children vertically */
     align-items: flex-start; 
     /* Center children horizontally */
     padding: 0%;
-    background-color: red;
+    /* background-color: red; */
+    flex-wrap: wrap;
 }
 
 .id-container {
-    width: 50%; /* Full width of the content container */
-    height: 50%; /* Full height of the content container */
+    width: 100%; 
+    /* Full width of the content container */
+    /* height: 100%;  */
+    /* Full height of the content container */
     display: flex; /* Flexbox for layout */
     flex-direction: column; /* Stack children horizontally */
     justify-content: flex-start; 
@@ -149,7 +153,7 @@ body {
     padding-left: 20px;
     padding-top: 20px;
     /* Center children horizontally */
-    background-color: #169e41;
+    /* background-color: #169e41; */
 }
 
 .id-box {
@@ -158,7 +162,7 @@ body {
     left : 15px; */
     background-color: #F7C236;
     aspect-ratio: 625/330;
-    width : 120%; /* Full width of the content container */
+    width : 100%; /* Full width of the content container */
     /* height: 100%;  */
     display: flex; /* Flexbox for layout */
     flex-direction: row; /* Stack children vertically */
@@ -219,12 +223,6 @@ body {
     color: #F7C236;
 }
 
-.actions-container{
-    width : 40%; /* Full width of the content container */
-    height: 60%;
-    background-color: #fffffe;
-}
-
 .skills-container {
     width: 100%; /* Full width of the content container */
     /* height: 50%;  */
@@ -250,7 +248,8 @@ body {
 
 .apps-container {
     width: 100%; /* Full width of the content container */
-    height: 80%; /* Full height of the content container */
+    /* height: 80%;  */
+    /* Full height of the content container */
     display: flex; /* Flexbox for layout */
     flex-direction: row; /* Stack children vertically */
     justify-content: flex-start; /* Center children vertically */
@@ -262,12 +261,23 @@ body {
 
 .app-box {
     width: 20%; /* Full width of the content container */
-    height: 100%; /* Full height of the content container */
+    /* height: 100%; */
     display: flex; /* Flexbox for layout */
     flex-direction: column; /* Stack children vertically */
     justify-content: flex-start; /* Center children vertically */
     align-items: center; /* Center children horizontally */
     box-sizing: border-box;
+    font-size: 2vw;
+    /* background-color: #553b06; */
     /* padding: 1vw; */
     /* margin-bottom: 1vw; */
+}
+
+
+.positons-container{
+    width : 100%; /* Full width of the content container */
+    /* height: 50vw; */
+    background-color: #004219;
+    border: 2.5px solid black; /* Black border for the box */
+    box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
 }
