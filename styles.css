@@ -212,6 +212,7 @@ body {
     padding-top: 0.3vw;
     box-sizing: border-box ;
     margin-top: -2.5vw;
+    margin-bottom: 1.8vw;
     width : 13vw;
     height : 2vw;
     background-color: black;
@@ -225,7 +226,7 @@ body {
 }
 
 .skills-container {
-    width: 90%; /* Full width of the content container */
+    width: 100%; /* Full width of the content container */
     /* height: 50%;  */
     /* Full height of the content container */
     display: flex; /* Flexbox for layout */
@@ -238,7 +239,35 @@ body {
     box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
     /* margin: 2vw; */
     margin-top: 1.7vw;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    /* padding-top: -50px; */
+    padding-bottom: 20px;
+    margin-bottom: 10vw;
     background-color: #FDC6FF;
+    font-family: 'VT323', monospace;
+}
+
+.apps-container {
+    width: 100%; /* Full width of the content container */
+    height: 80%; /* Full height of the content container */
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Stack children vertically */
+    justify-content: flex-start; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    box-sizing: border-box; 
+    /* background-color: #58005b; */
+    font-family: 'VT323', monospace;
+}
+
+.app-box {
+    width: 20%; /* Full width of the content container */
+    height: 100%; /* Full height of the content container */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    box-sizing: border-box;
+    /* padding: 1vw; */
+    /* margin-bottom: 1vw; */
 }
