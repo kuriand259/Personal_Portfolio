@@ -241,7 +241,7 @@ body {
     padding-right: 1.5vw;
     /* padding-top: -50px; */
     padding-bottom: 20px;
-    margin-bottom: 10vw;
+    /* margin-bottom: vw; */
     background-color: #FDC6FF;
     font-family: 'VT323', monospace;
 }
@@ -280,4 +280,24 @@ body {
     background-color: #004219;
     border: 2.5px solid black; /* Black border for the box */
     box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
+}
+
+.contact-box {
+    width: 100%; /* Full width of the content container */
+    height: 100%; /* Full height of the content container */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: flex-start; /* Center children horizontally */
+    box-sizing: border-box;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    padding-left: 2vw;
+    font-family: 'VT323', monospace;
+    font-size: 2vw;
+    background-color: #5AC4FE;
+    border: 2.5px solid black; /* Black border for the box */
+    box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
+    margin-bottom: 3vw;
+    margin-top: 3vw;
 }
