@@ -172,7 +172,7 @@ body {
     justify-content: flex-start; /* Center children vertically */
     align-items: center; /* Center children horizontally */
     border: 2.5px solid black; /* Black border for the box */
-    box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
+    box-shadow: 0.3vw 0.3vw 0px black; /* Subtle shadow for depth */
     padding: 1vw;
     box-sizing: border-box;
     margin-left: 2.5vw;
@@ -223,11 +223,12 @@ body {
     box-sizing: border-box ;
     margin-top: -2vw;
     margin-bottom: 2.5vw;
-    width : 13vw;
+    width : 20vw;
     height : 2vw;
     background-color: black;
     color: #F7C236;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .skills-container {
@@ -244,8 +245,8 @@ body {
     box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
     /* margin: 2vw; */
     margin-top: 1.7vw;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
+    /* padding-left: 2.5vw; */
+    /* padding-right: 1.5vw; */
     /* padding-top: -50px; */
     padding-bottom: 20px;
     /* margin-bottom: vw; */
@@ -283,33 +284,32 @@ body {
 
 .positions-box {
     width: 67%; /* Full width of the content container */
-    height: 70%;
+    /* height: 70%; */
     display: flex; /* Flexbox for layout */
     flex-direction: column; /* Stack children vertically */
     justify-content: flex-start; /* Center children vertically */
     align-items: flex-start; /* Center children horizontally */
     box-sizing: border-box;
+    aspect-ratio: 373/403;
     /* padding-top: 1.5vw; */
-    padding-bottom: 1.5vw;
+    /* padding-bottom: 1.5vw; */
     /* padding-left: 2vw; */
     font-family: 'VT323', monospace;
-    font-size: 2vw;
     background-color: #ffffff;
     /* border: 2.5px solid black; */
     box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
     margin-bottom: 3vw;
     /* margin-top: 3vw; */
     margin-left: 8vw;
-    aspect-ratio: 373/403;
 }
 
 .i-have-box {
     width: 100%; /* Full width of the content container */
-    height: 10%;
+    height: 13%;
     display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: flex-start; /* Center children horizontally */
+    flex-direction: row; /* Stack children vertically */
+    justify-content: flex-start; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
     box-sizing: border-box;
     /* padding-top: 1.5vw; */
     /* padding-bottom: 1.5vw; */
@@ -322,20 +322,22 @@ body {
 
 .single-position-box {
     width: 100%; /* Full width of the content container */
-    height: 30%;
+    height: 29%;
     display: flex; /* Flexbox for layout */
     flex-direction: column; /* Stack children vertically */
-    justify-content: flex-start; /* Center children vertically */
+    justify-content: center; /* Center children vertically */
     align-items: flex-start; /* Center children horizontally */
     box-sizing: border-box;
     /* padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-    padding-left: 2vw; */
+    padding-bottom: 1.5vw; */
+    padding-left: 1vw;
     font-family: 'VT323', monospace;
-    font-size: 2vw;
+    /* font-size: 2vw; */
     background-color: #ffffff;
-    border: 2.5px solid black; /* Black border for the box */
-    box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
+    border-bottom: 2.5px solid black; 
+    border-left: 2.5px solid black; 
+    border-right: 2.5px solid black; 
+    flex-wrap: wrap;
 }
 
 .contact-box {
@@ -356,4 +358,21 @@ body {
     box-shadow: 5px 5px 0px black; /* Subtle shadow for depth */
     margin-bottom: 3vw;
     margin-top: 3vw;
+}
+
+.pop-out-button {
+  /* Basic button styling */
+  cursor: pointer;
+  /* Transition for smooth animation */
+  transition: transform 0.1s , box-shadow 0.3s ease-out;
+  /* transition: transform 0.1s; */
+}
+
+.pop-out-button:hover {
+  /* Scale the button up to make it "pop out" */
+  /* transform: scale(1.05);  */
+    transform: translate(5px,5px); 
+  
+  /* Add a subtle box shadow for depth */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); 
 }
