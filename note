@@ -1,0 +1,14 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none; /* Removes any default background color or gradient */
+  color: inherit; /* Inherits text color from parent, or set a specific color */
+  border: none; /* Removes any default border */
+  padding: 0; /* Removes default padding */
+  font: inherit; /* Inherits font styles from parent, or set specific font properties */
+  cursor: pointer; /* Ensures the cursor changes to a pointer on hover */
+  outline: none; /* Removes the default focus outline (consider adding custom focus styles for accessibility) */
+  -webkit-appearance: none; /* For WebKit browsers, removes default button appearance */
+  -moz-appearance: none; /* For Mozilla browsers, removes default button appearance */
+  appearance: none; /* Standard property for removing default button appearance */
+}
